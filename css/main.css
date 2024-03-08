@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36454F;
+}
+.container{
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  position: relative;
+  padding-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+.menu i{
+  font-size: 1.7em;
+  cursor: pointer;
+}
+input{
+  display: none;
+}
+label .far{
+  position: absolute;
+  right: 35px;
+}
+.user{
+  position: relative;
+  height: 230px;
+  width: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user::after{
+  position: absolute;
+  content: '' ;
+  height: 245px;
+  width: 245px;
+  border: 5px solid #c70039;
+  border-radius: 50%;
+  top: -12px;
+  left: -12px;
+}
+.user img{
+  height: inherit;
+  width: inherit;
+  object-fit: cover ;
+  border-radius: 50%;
+}
+.username {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 2.5em;
+  opacity: 0.9;
+}
+.label{
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 5px;
+  opacity: 0.6;
+}
+.iconkalar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+i.fab{
+  font-size: 1.5em;
+  margin: 0 25px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+i.fab:hover{
+  color: #c70039;
+}
+.end{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #c70039;
+  border-radius: 30px 30px 0 0;
+}
+button{
+  position: relative;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  color: #fff;
+  background: #c70039;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -45px;
+  cursor: pointer;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.5);
+}
+button:hover{
+  transition: 0.2s;
+  transform: scale(1.1) translateX(-50%);
+  left: 52%;
+}
+p{
+  text-align: center ;
+  font-size: 1.2em;
+  opacity: 0.6;
+}
+.end i{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
